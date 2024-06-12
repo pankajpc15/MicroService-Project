@@ -1,0 +1,37 @@
+package com.quiz.service.impl;
+
+import java.util.List;
+
+import com.quiz.entities.Quiz;
+import com.quiz.repositories.QuizRepository;
+import com.quiz.service.QuizService;
+
+public class QuizServiceImpl implements QuizService {
+
+	private QuizRepository quizRepository;
+	
+	
+	public QuizServiceImpl(QuizRepository quizRepository) {
+	
+		this.quizRepository = quizRepository;
+	}
+
+	@Override
+	public Quiz add(Quiz quiz) {
+		
+		return quizRepository.save(quiz);
+	}
+
+	@Override
+	public List<Quiz> get() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Quiz get(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.questionservice.controllers;
+
+public class QuestionController {
+
+}

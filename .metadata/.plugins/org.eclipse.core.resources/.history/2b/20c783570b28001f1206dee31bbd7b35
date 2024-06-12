@@ -1,0 +1,5 @@
+package com.questionservice.service;
+
+public class QuestionService {
+
+}

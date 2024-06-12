@@ -1,0 +1,5 @@
+package com.questionservice.repositories;
+
+public class QuestionRepository {
+
+}

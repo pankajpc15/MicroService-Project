@@ -1,0 +1,15 @@
+spring.application.name=API-GATEWAY
+
+server.port=8083
+
+spring.cloud.gateway.mvc.routes[0].id=QuestionService
+ 
+spring.cloud.gateway.mvc.routes[0].uri=lb://QUIZ-SERVICE 
+
+spring.cloud.gateway.mvc.routes[0].predicates[0]=path= /quiz/** , /quiz-test/**
+
+
+
+spring.cloud.gateway.mvc.routes[1].id=QUESTION-SERVICE
+spring.cloud.gateway.mvc.routes[1].uri=lb://QuestionService
+spring.cloud.gateway.mvc.routes[1].predicates[0]=Path= /question/**

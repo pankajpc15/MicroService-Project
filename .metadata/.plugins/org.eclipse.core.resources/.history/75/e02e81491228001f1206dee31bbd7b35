@@ -1,0 +1,42 @@
+package com.questionservice.serviceimpl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.questionservice.entities.Question;
+import com.questionservice.repositories.QuestionRepository;
+import com.questionservice.service.QuestionService;
+
+@Service
+public class QuestionServiceImpl implements QuestionService {
+
+	private QuestionRepository questionRepository;
+	
+	
+	
+	public QuestionServiceImpl(QuestionRepository questionRepository) {
+		
+		this.questionRepository = questionRepository;
+	}
+
+	@Override
+	public Question create(Question question) {
+		
+		return questionRepository.save(question);
+	}
+
+	@Override
+	public List<Question> get() {
+		
+		return questionRepository.findAll();
+	}
+
+	@Override
+	public Question getone(Long id) {
+		
+		return questionRepository.findById(id).orElseThrow(() -> new RuntimeException("QuestionNotFound"));
+	}
+
+
+}

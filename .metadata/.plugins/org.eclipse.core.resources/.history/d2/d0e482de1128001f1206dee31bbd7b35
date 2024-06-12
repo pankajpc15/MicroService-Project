@@ -1,0 +1,38 @@
+package com.questionservice.controllers;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.questionservice.entities.Question;
+import com.questionservice.service.QuestionService;
+import com.quiz.entities.Quiz;
+
+@RestController
+@RequestMapping("question")
+public class QuestionController {
+	
+	private QuestionService questionService;
+
+	
+	public QuestionController(QuestionService questionService) {
+		super();
+		this.questionService = questionService;
+	}
+	
+	public Question create(@RequestBody Question question) {
+		return questionService.create(question);
+	}
+	
+	
+//	@PostMapping
+//	 public Quiz create(@RequestBody Quiz quiz) {
+//		 return quizService.add(quiz);
+//	 }
+//	
+	
+	
+	
+
+}

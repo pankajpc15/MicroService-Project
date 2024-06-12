@@ -1,0 +1,17 @@
+INDEX VERSION 1.134+C:\Users\admin\OneDrive\Documents\MicroService Project sts\.metadata\.plugins\org.eclipse.jdt.core
+3056831980.index
+1865797976.index
+2619518241.index
+532369773.index
+292802889.index
+2425996783.index
+2515032909.index
+1086847771.index
+1861927837.index
+211289669.index
+3377582914.index
+1405395261.index
+2612366556.index
+1799597325.index
+1231903381.index
+2983686124.index

@@ -1,0 +1,27 @@
+package com.questionservice.serviceimpl;
+
+import java.util.List;
+
+import com.questionservice.entities.Question;
+import com.questionservice.service.QuestionService;
+
+public class QuestionServiceImpl implements QuestionService {
+
+	@Override
+	public Question create(Question question) {
+		
+	}
+
+	@Override
+	public List<Question> get() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Question getone(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

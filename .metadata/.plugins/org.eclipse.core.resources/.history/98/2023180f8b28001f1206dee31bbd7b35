@@ -1,0 +1,6 @@
+spring.application.name=ServiceRegistry
+
+server.port=8083
+
+#disbale as client
+eureka.client.register-with-eureka=false
